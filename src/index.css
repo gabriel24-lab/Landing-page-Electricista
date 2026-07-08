@@ -965,6 +965,138 @@ main {
   flex: 0 0 auto;
 }
 
+/* ─── Services Tabs ───────────────────────────────────────────────── */
+.services-tabs-container {
+  background: var(--navy-2);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 32px 48px;
+  max-width: var(--container);
+  margin: 0 auto;
+  color: var(--surface);
+}
+
+.services-tabs-header {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.services-tab-btn {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 999px;
+  transition: all 200ms ease;
+}
+
+.services-tab-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.services-tab-btn.active {
+  background: var(--blue);
+  color: #fff;
+}
+
+.services-tab-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+@media (max-width: 900px) {
+  .services-tab-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.services-tab-info h3 {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 12px;
+  color: #fff;
+}
+
+.services-tab-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+.services-whatsapp-btn {
+  background: var(--whatsapp);
+  color: #fff;
+  display: inline-flex;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: var(--font-body);
+  transition:
+    transform 200ms ease,
+    background 200ms ease;
+}
+
+.services-whatsapp-btn:hover {
+  background: var(--whatsapp-dark);
+  transform: translateY(-2px);
+}
+
+.services-tab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.services-list-item {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 200ms ease;
+}
+
+.services-list-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.services-list-item svg {
+  color: var(--blue-light);
+}
+
+@media (max-width: 600px) {
+  .services-tabs-container {
+    padding: 24px;
+  }
+  .services-tab-info h3 {
+    font-size: 1.6rem;
+  }
+  .services-tab-btn {
+    font-size: 0.95rem;
+    padding: 8px 18px;
+  }
+  .services-list-item {
+    padding: 14px 16px;
+    font-size: 0.95rem;
+  }
+}
+
 /* ─── About ─────────────────────────────────────────────────────── */
 .about {
   background: var(--navy);
@@ -1481,7 +1613,7 @@ main {
   background: var(--whatsapp);
   border: 1.5px solid rgba(255, 255, 255, 0.28);
   border-radius: 50%;
-  bottom: 28px;
+  bottom: 40px;
   box-shadow: 0 16px 40px rgba(37, 211, 102, 0.38);
   color: #fff;
   display: inline-flex;
@@ -1869,7 +2001,7 @@ main {
 
   /* WhatsApp button */
   .floating-whatsapp {
-    bottom: 28px;
+    bottom: 55px;
     height: 58px;
     width: 58px;
     right: 20px;

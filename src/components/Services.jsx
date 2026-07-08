@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { SERVICES } from "../data/content.js";
+import { createWhatsAppLink } from "../config/contact.js";
 import Icon from "./Icon.jsx";
 import SectionHeader from "./SectionHeader.jsx";
 
 export default function Services() {
+  const [activeTab, setActiveTab] = useState(0);
+  const activeService = SERVICES[activeTab];
+
   return (
     <section id="servicios" className="section services">
       <SectionHeader
@@ -10,29 +15,56 @@ export default function Services() {
         title="Más de 20 años brindando soluciones confiables."
         description="Cada trabajo se realiza con responsabilidad, utilizando las mejores prácticas para brindar soluciones seguras, eficientes y adaptadas a las necesidades de cada cliente."
       />
-      <div className="services-grid">
-        {SERVICES.map((service, index) => (
-          <article
-            className={`service-card ${service.isMain ? "service-card--main" : ""}`}
-            data-reveal
-            key={service.title}
-            style={{ "--delay": `${index * 90}ms` }}
-          >
-            <div className="service-icon">
-              <Icon name={service.icon} size={30} />
-            </div>
-            <h3>{service.title}</h3>
-            <p>{service.summary}</p>
-            <ul>
-              {service.items.map((item) => (
-                <li key={item}>
-                  <Icon name="check" size={16} />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </article>
-        ))}
+
+      <div
+        className="services-tabs-container"
+        data-reveal
+        style={{
+          backgroundImage: `linear-gradient(rgba(11, 53, 104, 0.65), rgba(6, 24, 48, 0.85)), url('${activeService.image}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          transition: "background-image 300ms ease",
+        }}
+      >
+        <div className="services-tabs-header">
+          {SERVICES.map((service, index) => (
+            <button
+              key={service.title}
+              className={`services-tab-btn ${activeTab === index ? "active" : ""}`}
+              onClick={() => setActiveTab(index)}
+            >
+              {service.title}
+            </button>
+          ))}
+        </div>
+
+        <div className="services-tab-content">
+          <div className="services-tab-info">
+            <h3>
+              {activeService.title === "Aire acondicionado"
+                ? "Instalación, mantenimiento y reparación"
+                : activeService.title}
+            </h3>
+            <p>{activeService.summary}</p>
+            <a
+              className="button button--primary services-whatsapp-btn"
+              href={createWhatsAppLink()}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Solicitar por WhatsApp
+            </a>
+          </div>
+
+          <div className="services-tab-list">
+            {activeService.items.map((item) => (
+              <div className="services-list-item" key={item}>
+                <Icon name="check" size={18} />
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

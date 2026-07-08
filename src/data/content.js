@@ -23,6 +23,7 @@ export const SERVICES = [
   {
     icon: "snowflake",
     title: "Aire acondicionado",
+    image: "/aires-acondicionados.webp",
     summary:
       "Instalación, mantenimiento y reparación profesional para tu confort.",
     isMain: true,
@@ -31,29 +32,27 @@ export const SERVICES = [
       "Mantenimiento preventivo",
       "Mantenimiento correctivo",
       "Reparación",
-      "Recarga de gas",
-      "Diagnóstico",
+      "Diagnostico",
     ],
   },
   {
     icon: "bolt",
     title: "Servicios eléctricos",
+    image: "/servicios-electricos.webp",
     summary:
       "Soluciones seguras, eficientes y bajo norma para tu tranquilidad.",
     items: [
       "Instalaciones eléctricas",
-      "Reparación de cortos",
-      "Cambio de breakers",
       "Tomas e interruptores",
       "Cableado completo",
-      "Remodelaciones",
-      "Locales comerciales",
       "Casas nuevas",
+      "Tableros eléctricos",
     ],
   },
   {
     icon: "tool",
     title: "Reparación de equipos eléctricos",
+    image: "/reparacion-equipos-electricos.webp",
     summary: "Diagnóstico y arreglo de electrodomésticos para el hogar.",
     items: [
       "Lavadoras",
