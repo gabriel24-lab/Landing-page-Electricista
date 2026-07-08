@@ -3,7 +3,11 @@ export default function Experience() {
     <section id="experiencia" className="section experience-section">
       <div className="experience-container">
         <div className="experience-portrait" data-reveal="left">
-          <img src="/electricista gabriel.png" alt="Técnico en acción" />
+          <img
+            src="/electricista gabriel.webp"
+            alt="Técnico en acción"
+            loading="lazy"
+          />
           <div className="experience-years">
             <span className="years-number">20+</span>
             <span className="years-text">Años de Trayectoria</span>
@@ -26,30 +30,35 @@ export default function Experience() {
           <div className="experience-timeline">
             <div className="timeline-item">
               <div className="timeline-dot"></div>
-              <h3>Mantenimiento Industrial (10 años)</h3>
+              <h3>Cosargos SAS 2016 - 2026</h3>
               <p>
-                Responsable del mantenimiento eléctrico en una planta arrocera.
-                Trabajo crítico para evitar interrupciones en la línea de
-                producción.
+                Durante cerca de una década estuve a cargo del mantenimiento
+                eléctrico de la maquinaria y los sistemas de la planta,
+                asegurando la continuidad de la producción mediante un
+                funcionamiento confiable de todos los equipos.
               </p>
             </div>
 
             <div className="timeline-item">
               <div className="timeline-dot"></div>
-              <h3>Especialista en Climatización</h3>
+              <h3>E.S.T Aserdir S.A.S 2010</h3>
               <p>
-                Formación y experiencia específica en instalación, mantenimiento
-                preventivo y reparación de sistemas de aire acondicionado.
+                Responsable del mantenimiento preventivo y correctivo de
+                sistemas eléctricos, garantizando su funcionamiento seguro y
+                eficiente para evitar fallas.
               </p>
             </div>
 
             <div className="timeline-item">
               <div className="timeline-dot"></div>
-              <h3>Servicio Integral Domiciliario</h3>
+              <h3>
+                Dairy Partners Americas Manufacturing Colombia Ltda (DPA) 2004 -
+                2007
+              </h3>
               <p>
-                Llevando los estándares de seguridad industrial y
-                responsabilidad a cada casa y local comercial, garantizando
-                soluciones definitivas.
+                Inicié mi trayectoria realizando instalaciones, diagnósticos y
+                reparaciones eléctricas en entornos industriales, adquiriendo
+                una base sólida en sistemas eléctricos.
               </p>
             </div>
           </div>

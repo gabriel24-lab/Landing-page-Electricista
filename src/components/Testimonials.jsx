@@ -31,7 +31,11 @@ export default function Testimonials() {
           </div>
           <p>{testimonial.quote}</p>
           <div className="testimonial-author">
-            <img src={testimonial.image} alt={testimonial.name} />
+            <img
+              src={testimonial.image}
+              alt={testimonial.name}
+              loading="lazy"
+            />
             <div>
               <strong>{testimonial.name}</strong>
               <span>{testimonial.role}</span>

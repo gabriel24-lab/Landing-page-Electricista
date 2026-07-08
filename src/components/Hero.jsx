@@ -74,8 +74,9 @@ export default function Hero() {
           style={{ "--delay": "400ms" }}
         >
           <img
-            src="/electricista gabriel.png"
+            src="/electricista gabriel.webp"
             alt="Técnico electricista profesional"
+            fetchpriority="high"
           />
         </div>
       </div>

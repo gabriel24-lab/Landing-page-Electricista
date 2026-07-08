@@ -28,7 +28,6 @@ export default function App() {
         <WhyMe />
         <Experience />
         <Works />
-        <Testimonials />
         <Contact />
       </main>
       <Footer />

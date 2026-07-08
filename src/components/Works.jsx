@@ -2,15 +2,20 @@ import { useState, useRef } from "react";
 import Icon from "./Icon.jsx";
 
 const WORKS_DATA = [
-  { id: 1, img: "/work_1.png", title: "Tablero Eléctrico Industrial", cols: 2 },
+  {
+    id: 1,
+    img: "/work_1.webp",
+    title: "Tablero Eléctrico Industrial",
+    cols: 2,
+  },
   {
     id: 2,
-    imgs: ["/Instalacion1.jpeg", "/Instalacion2.png"],
+    imgs: ["/Instalacion1.webp", "/Instalacion2.webp"],
     title: "Instalación de Aire Acondicionado",
     cols: 1,
   },
-  { id: 3, img: "/work_3.png", title: "Cableado Comercial", cols: 1 },
-  { id: 4, img: "/work_4.png", title: "Mantenimiento de Maquinaria", cols: 1 },
+  { id: 3, img: "/work_3.webp", title: "Cableado Comercial", cols: 1 },
+  { id: 4, img: "/work_4.webp", title: "Mantenimiento de Maquinaria", cols: 1 },
   {
     id: 5,
     video: "/Trabajo1 video.mp4",
@@ -49,7 +54,7 @@ function VideoCard({ work, index }) {
     >
       <video
         ref={videoRef}
-        preload="metadata"
+        preload="none"
         controls={playing}
         className="work-video"
         onEnded={handleEnded}
@@ -99,15 +104,16 @@ export default function Works() {
             >
               {work.imgs ? (
                 <div className="work-image-container">
-                  <img src={work.imgs[0]} alt={work.title} />
+                  <img src={work.imgs[0]} alt={work.title} loading="lazy" />
                   <img
                     src={work.imgs[1]}
                     alt={work.title}
                     className="crossfade-img"
+                    loading="lazy"
                   />
                 </div>
               ) : (
-                <img src={work.img} alt={work.title} />
+                <img src={work.img} alt={work.title} loading="lazy" />
               )}
 
               <div className="work-overlay">

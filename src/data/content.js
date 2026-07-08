@@ -78,20 +78,20 @@ export const TESTIMONIALS = [
       "Un trabajo impecable. Reviso el tablero electrico de mi finca y encontro fallas que otros habian pasado por alto. Serio, puntual y honesto.",
     name: "Maria Gonzalez",
     role: "Propietaria de finca, Casanare",
-    image: "/testimonial_client1.png",
+    image: "/testimonial_client1.webp",
   },
   {
     quote:
       "Instalo dos aires acondicionados en mi consultorio en tiempo record y con acabados limpios. El precio fue justo y el servicio excelente.",
     name: "Carlos Hernandez",
     role: "Medico, Bogota",
-    image: "/testimonial_client2.png",
+    image: "/testimonial_client2.webp",
   },
   {
     quote:
       "Reparo mi nevera cuando ya pensaba reemplazarla. Me explico el problema, el costo y la dejo funcionando el mismo dia.",
     name: "Andres Morales",
     role: "Cliente residencial, Villavicencio",
-    image: "/testimonial_client3.png",
+    image: "/testimonial_client3.webp",
   },
 ];

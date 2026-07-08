@@ -18,8 +18,9 @@ export default function WhyMe() {
 
         <div className="about-image-hybrid" data-reveal="right">
           <img
-            src="/hero_split.png"
+            src="/hero_split.webp"
             alt="Trabajo eléctrico profesional y seguro"
+            loading="lazy"
           />
           <div className="hybrid-badge">
             <Icon name="check" size={16} />
