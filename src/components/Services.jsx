@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SERVICES } from "../data/content.js";
 import { createWhatsAppLink } from "../config/contact.js";
 import Icon from "./Icon.jsx";
@@ -7,6 +7,16 @@ import SectionHeader from "./SectionHeader.jsx";
 export default function Services() {
   const [activeTab, setActiveTab] = useState(0);
   const activeService = SERVICES[activeTab];
+
+  // Preload images to prevent delay when switching tabs
+  useEffect(() => {
+    SERVICES.forEach((service) => {
+      if (service.image) {
+        const img = new Image();
+        img.src = service.image;
+      }
+    });
+  }, []);
 
   return (
     <section id="servicios" className="section services">
