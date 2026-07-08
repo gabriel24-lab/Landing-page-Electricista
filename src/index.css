@@ -474,9 +474,17 @@ main {
 
 .mobile-close {
   position: absolute;
-  right: 5vw;
-  top: 20px;
+  right: 16px;
+  top: 16px;
   z-index: 2;
+  color: var(--ink);
+  background: var(--surface-warm);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-menu-panel {
@@ -488,10 +496,11 @@ main {
   gap: 8px;
   margin-left: auto;
   min-height: 100%;
-  padding: 96px 5vw 40px;
+  padding: 72px 24px 40px;
+  position: relative;
   transform: translateX(100%);
   transition: transform 340ms var(--ease);
-  width: min(420px, 88vw);
+  width: min(420px, 85vw);
 }
 
 .mobile-menu--open .mobile-menu-panel {
@@ -502,10 +511,10 @@ main {
   border-bottom: 1px solid var(--line);
   color: var(--ink);
   font-family: var(--font-heading);
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: -0.02em;
-  padding: 14px 0;
+  padding: 10px 0;
   transition:
     color 180ms ease,
     padding-left 200ms ease;
@@ -1860,10 +1869,14 @@ main {
 
   /* WhatsApp button */
   .floating-whatsapp {
-    bottom: 18px;
-    height: 50px;
-    width: 50px;
-    right: 16px;
+    bottom: 28px;
+    height: 58px;
+    width: 58px;
+    right: 20px;
+  }
+  .floating-whatsapp svg {
+    height: 28px;
+    width: 28px;
   }
 
   /* Badges de experiencia */

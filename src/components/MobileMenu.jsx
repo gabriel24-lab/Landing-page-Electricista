@@ -20,15 +20,15 @@ export default function MobileMenu({ open, onClose }) {
       className={`mobile-menu${open ? " mobile-menu--open" : ""}`}
       aria-hidden={!open}
     >
-      <button
-        className="icon-button mobile-close"
-        type="button"
-        onClick={onClose}
-        aria-label="Cerrar menu"
-      >
-        <Icon name="close" />
-      </button>
       <div className="mobile-menu-panel">
+        <button
+          className="icon-button mobile-close"
+          type="button"
+          onClick={onClose}
+          aria-label="Cerrar menu"
+        >
+          <Icon name="close" />
+        </button>
         {NAV_ITEMS.map((item) => (
           <a
             href={`#${item.id}`}
