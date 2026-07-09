@@ -242,6 +242,10 @@ main {
   transform: rotate(-5deg) scale(1.08);
 }
 
+.brand-img {
+  height: 50px;
+}
+
 .brand-text {
   color: var(--surface);
   font-family: var(--font-heading);
