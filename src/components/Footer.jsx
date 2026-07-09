@@ -46,7 +46,7 @@ export default function Footer() {
           >
             Facebook
           </a>
-          <a href="mailto:tecnicoelec@email.com">tecnicoelec@email.com</a>
+          <a href="mailto:garilmesi@gmail.com">garilmesi@gmail.com</a>
         </nav>
       </div>
       <div className="footer-bottom">

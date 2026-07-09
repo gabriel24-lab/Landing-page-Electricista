@@ -10,7 +10,7 @@ export const CONTACT_DETAILS = [
     label: "Horario",
     value: "Lunes a sabado: 7:00 a.m. - 7:00 p.m.",
   },
-  { icon: "mail", label: "Correo", value: "tecnicoelec@email.com" },
+  { icon: "mail", label: "Correo", value: "garilmesi@gmail.com" },
 ];
 
 export function createWhatsAppLink(message = DEFAULT_WHATSAPP_MESSAGE) {
