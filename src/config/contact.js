@@ -1,9 +1,9 @@
-export const WHATSAPP_NUMBER = "573195437203";
+export const WHATSAPP_NUMBER = "573173263208";
 export const DEFAULT_WHATSAPP_MESSAGE =
   "Hola, me gustaria solicitar mas informacion sobre los servicios electricos.";
 
 export const CONTACT_DETAILS = [
-  { icon: "phone", label: "WhatsApp / Telefono", value: "+57 319 543 7203" },
+  { icon: "phone", label: "WhatsApp / Telefono", value: "+57 317 3263208" },
   { icon: "pin", label: "Area de cobertura", value: "Valledupar, Cesar" },
   {
     icon: "clock",
